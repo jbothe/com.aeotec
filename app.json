@@ -1260,6 +1260,379 @@
       ]
     },
     {
+      "id": "DSC18103",
+      "name": {
+        "en": "Micro Smart Switch G2"
+      },
+      "class": "socket",
+      "capabilities": [
+        "measure_power",
+        "meter_power",
+        "onoff"
+      ],
+      "images": {
+        "large": "/drivers/DSC18103/assets/images/large.png",
+        "small": "/drivers/DSC18103/assets/images/small.png"
+      },
+      "zwave": {
+        "manufacturerId": 134,
+        "productTypeId": [
+          3
+        ],
+        "productId": [
+          18
+        ],
+        "zwaveAllianceProductId": 708,
+        "learnmode": {
+          "instruction": {
+            "en": "Short press the action button on the back of the Micro Smart Switch.",
+            "nl": "Druk kort op de actie knop op de achterkant van de Micro Smart Switch."
+          }
+        },
+        "associationGroups": [
+          1,
+          2
+        ],
+        "defaultConfiguration": [
+          {
+            "id": 80,
+            "size": 1,
+            "value": 2
+          },
+          {
+            "id": 120,
+            "size": 1,
+            "value": 0
+          }
+        ]
+      },
+      "settings": [
+        {
+          "id": "80",
+          "type": "checkbox",
+          "label": {
+            "en": "Send notification when Micro Smart Switch is manually turned on/off",
+            "nl": "Stuur notificaties naar geassocieerde apparaten wanneer de Micro Smart Switch aan of uit wordt gezet"
+          },
+          "hint": {
+            "en": "This parameter (80) determines whether or not associated devices are notifiied of on/off events.",
+            "nl": "Deze parameter (80) bepaalt of geassocieerde apparaten notificaties ontvangen van aan/uit events."
+          },
+          "zwave": {
+            "index": 80,
+            "size": 1
+          },
+          "value": true
+        },
+        {
+          "id": "120",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type mode",
+            "nl": "Schakelaar type input 1"
+          },
+          "hint": {
+            "en": "This parameter (120) determines the switch mode.",
+            "nl": "Deze parameter (120) bepaalt de modus voor het invoer apparaat verbonden aan ingang 1."
+          },
+          "zwave": {
+            "index": 120,
+            "size": 1
+          },
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdruk schakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "2-state switch mode",
+                "nl": "2-state schakel modus"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch mode",
+                "nl": "3-way schakel modus"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSC19103",
+      "name": {
+        "en": "Micro Smart Dimmer G2"
+      },
+      "class": "light",
+      "capabilities": [
+        "dim",
+        "measure_power",
+        "meter_power",
+        "onoff"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "images": {
+        "large": "/drivers/DSC19103/assets/images/large.jpg",
+        "small": "/drivers/DSC19103/assets/images/small.jpg"
+      },
+      "zwave": {
+        "manufacturerId": 134,
+        "productTypeId": [
+          3
+        ],
+        "productId": [
+          19
+        ],
+        "zwaveAllianceProductId": 774,
+        "learnmode": {
+          "instruction": {
+            "en": "Short press the action button on the back of the Micro Smart Dimmer.",
+            "nl": "Druk kort op de actie knop op de achterkant van de Micro Smart Dimmer."
+          }
+        },
+        "associationGroups": [
+          1,
+          2
+        ],
+        "defaultConfiguration": [
+          {
+            "id": 80,
+            "size": 1,
+            "value": 2
+          },
+          {
+            "id": 90,
+            "size": 1,
+            "value": 1
+          },
+          {
+            "id": 91,
+            "size": 2,
+            "value": 5
+          },
+          {
+            "id": 92,
+            "size": 1,
+            "value": 10
+          },
+          {
+            "id": 101,
+            "size": 4,
+            "value": 4
+          },
+          {
+            "id": 102,
+            "size": 4,
+            "value": 8
+          },
+          {
+            "id": 111,
+            "size": 4,
+            "value": 15
+          },
+          {
+            "id": 112,
+            "size": 4,
+            "value": 60
+          },
+          {
+            "id": 120,
+            "size": 1,
+            "value": 0
+          }
+        ]
+      },
+      "settings": [
+        {
+          "id": "80",
+          "type": "checkbox",
+          "label": {
+            "en": "Send notification when Micro Dimmer is manually controlled using a switch",
+            "nl": "Stuur notificaties naar geassocieerde apparaten wanneer de Micro Dimmer aan of uit wordt gezet"
+          },
+          "hint": {
+            "en": "This parameter (80) determines whether or not associated devices are notifiied of on/off or dim events.",
+            "nl": "Deze parameter (80) bepaalt of geassocieerde apparaten notificaties ontvangen van aan/uit events."
+          },
+          "zwave": {
+            "index": 80,
+            "size": 1
+          },
+          "value": true
+        },
+        {
+          "id": "91",
+          "type": "number",
+          "label": {
+            "en": "Minimum wattage change needed before an update report is send",
+            "nl": "Minimale verandering in wattage nodig voor het verzenden van een update"
+          },
+          "hint": {
+            "en": "This parameter (91) determines the minimum value change before a report is being send to Homey.",
+            "nl": "Deze parameter (91) bepaalt de minimale waardeverandering voordat er een rapport wordt verzonden naar Homey."
+          },
+          "zwave": {
+            "index": 91,
+            "size": 2
+          },
+          "attr": {
+            "min": 0,
+            "max": 32000
+          },
+          "value": 5
+        },
+        {
+          "id": "92",
+          "type": "number",
+          "label": {
+            "en": "Minimum wattage change (%) needed before an update report is send",
+            "nl": "Minimale verandering in wattage (%) nodig voor het verzenden van een update"
+          },
+          "hint": {
+            "en": "This parameter (92) determines the minimum percentage change before a report is being send to Homey.",
+            "nl": "Deze parameter (92) bepaalt de minimale verandering in percentage voordat er een rapport wordt verzonden naar Homey"
+          },
+          "zwave": {
+            "index": 92,
+            "size": 1
+          },
+          "attr": {
+            "min": 0,
+            "max": 100
+          },
+          "value": 10
+        },
+        {
+          "id": "101",
+          "type": "number",
+          "label": {
+            "en": "Report 1 contents"
+          },
+          "hint": {
+            "en": ""
+          },
+          "zwave": {
+            "index": 101,
+            "size": 4
+          },
+          "attr": {
+            "min": 0,
+            "max": 8
+          },
+          "value": 4
+        },
+        {
+          "id": "102",
+          "type": "number",
+          "label": {
+            "en": "Report 2 contents"
+          },
+          "hint": {
+            "en": ""
+          },
+          "zwave": {
+            "index": 102,
+            "size": 4
+          },
+          "attr": {
+            "min": 0,
+            "max": 8
+          },
+          "value": 8
+        },
+        {
+          "id": "111",
+          "type": "number",
+          "label": {
+            "en": "Report 1 interval"
+          },
+          "hint": {
+            "en": ""
+          },
+          "zwave": {
+            "index": 111,
+            "size": 4
+          },
+          "attr": {
+            "min": 0,
+            "max": 3600
+          },
+          "value": 15
+        },
+        {
+          "id": "112",
+          "type": "number",
+          "label": {
+            "en": "Report 2 interval"
+          },
+          "hint": {
+            "en": ""
+          },
+          "zwave": {
+            "index": 112,
+            "size": 4
+          },
+          "attr": {
+            "min": 0,
+            "max": 3600
+          },
+          "value": 60
+        },
+        {
+          "id": "120",
+          "type": "dropdown",
+          "label": {
+            "en": "Switch type mode",
+            "nl": "Schakelaar type input 1"
+          },
+          "hint": {
+            "en": "This parameter (120) determines the switch mode.",
+            "nl": "Deze parameter (120) bepaalt de modus voor het invoer apparaat verbonden aan ingang 1."
+          },
+          "zwave": {
+            "index": 120,
+            "size": 1
+          },
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Momentary switch",
+                "nl": "Pulsdruk schakelaar"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "2-state switch mode",
+                "nl": "2-state schakel modus"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "3-way switch mode",
+                "nl": "3-way schakel modus"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "DSD37",
       "name": {
         "en": "Repeater"

@@ -1,0 +1,177 @@
+[
+  {
+    "id": "80",
+    "type": "checkbox",
+    "label": {
+      "en": "Send notification when Micro Dimmer is manually controlled using a switch",
+      "nl": "Stuur notificaties naar geassocieerde apparaten wanneer de Micro Dimmer aan of uit wordt gezet"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not associated devices are notifiied of on/off or dim events.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of geassocieerde apparaten notificaties ontvangen van aan/uit events."
+    },
+    "zwave": {
+      "index": 80,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "91",
+    "type": "number",
+    "label": {
+      "en": "Minimum wattage change needed before an update report is send",
+      "nl": "Minimale verandering in wattage nodig voor het verzenden van een update"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum value change before a report is being send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale waardeverandering voordat er een rapport wordt verzonden naar Homey."
+    },
+    "zwave": {
+      "index": 91,
+      "size": 2
+    },
+    "attr": {
+      "min": 0,
+      "max": 32000
+    },
+    "value": 5
+  },
+  {
+    "id": "92",
+    "type": "number",
+    "label": {
+      "en": "Minimum wattage change (%) needed before an update report is send",
+      "nl": "Minimale verandering in wattage (%) nodig voor het verzenden van een update"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum percentage change before a report is being send to Homey.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimale verandering in percentage voordat er een rapport wordt verzonden naar Homey"
+    },
+    "zwave": {
+      "index": 92,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 10
+  },
+  {
+    "id": "101",
+    "type": "number",
+    "label": {
+      "en": "Report 1 contents"
+    },
+    "hint": {
+      "en": ""
+    },
+    "zwave": {
+      "index": 101,
+      "size": 4
+    },
+    "attr": {
+      "min": 0,
+      "max": 8
+    },
+    "value": 4
+  },
+  {
+    "id": "102",
+    "type": "number",
+    "label": {
+      "en": "Report 2 contents"
+    },
+    "hint": {
+      "en": ""
+    },
+    "zwave": {
+      "index": 102,
+      "size": 4
+    },
+    "attr": {
+      "min": 0,
+      "max": 8
+    },
+    "value": 8
+  },
+  {
+    "id": "111",
+    "type": "number",
+    "label": {
+      "en": "Report 1 interval"
+    },
+    "hint": {
+      "en": ""
+    },
+    "zwave": {
+      "index": 111,
+      "size": 4
+    },
+    "attr": {
+      "min": 0,
+      "max": 3600
+    },
+    "value": 15
+  },
+  {
+    "id": "112",
+    "type": "number",
+    "label": {
+      "en": "Report 2 interval"
+    },
+    "hint": {
+      "en": ""
+    },
+    "zwave": {
+      "index": 112,
+      "size": 4
+    },
+    "attr": {
+      "min": 0,
+      "max": 3600
+    },
+    "value": 60
+  },
+  {
+    "id": "120",
+    "type": "dropdown",
+    "label": {
+      "en": "Switch type mode",
+      "nl": "Schakelaar type input 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the switch mode.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de modus voor het invoer apparaat verbonden aan ingang 1."
+    },
+    "zwave": {
+      "index": 120,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Momentary switch",
+          "nl": "Pulsdruk schakelaar"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "2-state switch mode",
+          "nl": "2-state schakel modus"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "3-way switch mode",
+          "nl": "3-way schakel modus"
+        }
+      }
+    ]
+  }
+]

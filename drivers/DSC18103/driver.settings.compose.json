@@ -1,0 +1,59 @@
+[
+  {
+    "id": "80",
+    "type": "checkbox",
+    "label": {
+      "en": "Send notification when Micro Smart Switch is manually turned on/off",
+      "nl": "Stuur notificaties naar geassocieerde apparaten wanneer de Micro Smart Switch aan of uit wordt gezet"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not associated devices are notifiied of on/off events.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of geassocieerde apparaten notificaties ontvangen van aan/uit events."
+    },
+    "zwave": {
+      "index": 80,
+      "size": 1
+    },
+    "value": true
+  },
+  {
+    "id": "120",
+    "type": "dropdown",
+    "label": {
+      "en": "Switch type mode",
+      "nl": "Schakelaar type input 1"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the switch mode.",
+      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de modus voor het invoer apparaat verbonden aan ingang 1."
+    },
+    "zwave": {
+      "index": 120,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Momentary switch",
+          "nl": "Pulsdruk schakelaar"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "2-state switch mode",
+          "nl": "2-state schakel modus"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "3-way switch mode",
+          "nl": "3-way schakel modus"
+        }
+      }
+    ]
+  }
+]

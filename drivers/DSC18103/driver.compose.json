@@ -1,0 +1,47 @@
+{
+  "id": "DSC18103",
+  "name": {
+    "en": "Micro Smart Switch G2"
+  },
+  "class": "socket",
+  "capabilities": [
+    "measure_power",
+    "meter_power",
+    "onoff"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3
+    ],
+    "productId": [
+      18
+    ],
+    "zwaveAllianceProductId": 708,
+    "learnmode": {
+      "instruction": {
+        "en": "Short press the action button on the back of the Micro Smart Switch.",
+        "nl": "Druk kort op de actie knop op de achterkant van de Micro Smart Switch."
+      }
+    },
+    "associationGroups": [
+      1, 2
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 80,
+        "size": 1,
+        "value": 2
+      },
+      {
+        "id": 120,
+        "size": 1,
+        "value": 0
+      }
+    ]
+  }
+}

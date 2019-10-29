@@ -1,0 +1,88 @@
+{
+  "id": "DSC19103",
+  "name": {
+    "en": "Micro Smart Dimmer G2"
+  },
+  "class": "light",
+  "capabilities": [
+    "dim",
+    "measure_power",
+    "meter_power",
+    "onoff"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "setOnDim": false
+    }
+  },
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.jpg",
+    "small": "{{driverAssetsPath}}/images/small.jpg"
+  },
+  "zwave": {
+    "manufacturerId": 134,
+    "productTypeId": [
+      3
+    ],
+    "productId": [
+      19
+    ],
+    "zwaveAllianceProductId": 774,
+    "learnmode": {
+      "instruction": {
+        "en": "Short press the action button on the back of the Micro Smart Dimmer.",
+        "nl": "Druk kort op de actie knop op de achterkant van de Micro Smart Dimmer."
+      }
+    },
+    "associationGroups": [
+      1, 2
+    ],
+    "defaultConfiguration": [
+      {
+        "id": 80,
+        "size": 1,
+        "value": 2
+      },
+      {
+        "id": 90,
+        "size": 1,
+        "value": 1
+      },
+      {
+        "id": 91,
+        "size": 2,
+        "value": 5
+      },
+      {
+        "id": 92,
+        "size": 1,
+        "value": 10
+      },
+      {
+        "id": 101,
+        "size": 4,
+        "value": 4
+      },
+      {
+        "id": 102,
+        "size": 4,
+        "value": 8
+      },
+      {
+        "id": 111,
+        "size": 4,
+        "value": 15
+      },
+      {
+        "id": 112,
+        "size": 4,
+        "value": 60
+      },
+      {
+        "id": 120,
+        "size": 1,
+        "value": 0
+      }
+    ]
+  }
+}
